@@ -63,6 +63,27 @@
         </div>
       </nav>
 
+      <div class="container mt-5">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="#"
+                style="text-decoration: none; color: gray;"
+              >Overview</a>
+            </li>
+            @foreach ($breadcrumbs as $breadcrumb)
+              <li class="breadcrumb-item">
+                <a
+                  href="{{ $breadcrumb['url'] }}"
+                  style="text-decoration: none; color: #000; font-weight: 600;"
+                  >{{ $breadcrumb['text'] }}</a>
+              </li>
+            @endforeach
+          </ol>
+        </nav>
+      </div>
+
       <script src="{{ asset('js/bootstrap.js') }}"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
