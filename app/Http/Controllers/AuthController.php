@@ -24,7 +24,7 @@ class AuthController extends Controller
             return redirect('/dashboard');
         }
 
-        return redirect('/register');
+        return redirect('/');
     }
 
     public function login(LoginRequest $request)

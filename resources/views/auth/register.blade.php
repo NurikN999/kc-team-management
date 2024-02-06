@@ -81,6 +81,17 @@
                                 <label for="password-confirm" class="form-label">Подтвердите пароль</label>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
+
+                            <div class="mb-3">
+                                <label for="team" class="form-label">Подтвердите пароль</label>
+                                <select id="team" class="form-control" name="team_id" required>
+                                    @foreach ($teams as $team)
+                                        <option value="{{ $team->id }}">{{ $team->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block">
                                     {{ __('Регистрация') }}
