@@ -48,7 +48,7 @@
 
                 <div class="card bg-glass">
                     <div class="card-body px-4 py-5 px-md-5">
-                        <form method="POST" action="#">
+                        <form method="POST" action="/login">
                             @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
