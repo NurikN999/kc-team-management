@@ -41,4 +41,9 @@ class User extends Authenticatable
     protected $casts = [
         'password' => 'hashed',
     ];
+
+    public function teams()
+    {
+        return $this->belongsTo(Team::class);
+    }
 }
