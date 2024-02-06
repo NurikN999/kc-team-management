@@ -83,7 +83,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="team" class="form-label">Подтвердите пароль</label>
+                                <label for="team" class="form-label">Выберите свою команду</label>
                                 <select id="team" class="form-control" name="team_id" required>
                                     @foreach ($teams as $team)
                                         <option value="{{ $team->id }}">{{ $team->name }}</option>

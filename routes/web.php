@@ -29,7 +29,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
-        return 'Welcome to the dashboard';
+        return view('dashboard');
     })->name('dashboard');
     Route::post('/logout', [AuthController::class, 'logout']);
 });
