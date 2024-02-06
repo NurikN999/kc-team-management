@@ -55,7 +55,7 @@
 
                 <div class="card bg-glass">
                     <div class="card-body px-4 py-5 px-md-5">
-                        <form method="POST" action="#">
+                        <form method="POST" action="/register">
                             @csrf
                             <div class="mb-3">
                                 <label for="first_name" class="form-label">Имя</label>
